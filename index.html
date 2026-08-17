@@ -3,16 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cannademy</title>
+<title>Cannademy — Three-Year Cannabis Cultivation & Medical Programme | UK</title>
+<meta name="description" content="A three-year hybrid programme in cultivation science, medical cannabis and compliance. Online coursework plus hands-on intensives in a licensed facility.">
+<link rel="canonical" href="https://cannademy.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cannademy">
+<meta property="og:title" content="Cannademy — Three-Year Cannabis Cultivation & Medical Programme | UK">
+<meta property="og:description" content="A three-year hybrid programme in cultivation science, medical cannabis and compliance. Online coursework plus hands-on intensives in a licensed facility.">
+<meta property="og:url" content="https://cannademy.net/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F1EC">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#F2F1EC; --bg-2:#EAE9E2; --card:#FFFFFF; --ink:#111110; --ink-60:rgba(17,17,16,.6); --ink-40:rgba(17,17,16,.4); --hair:rgba(17,17,16,.14); --hair-2:rgba(17,17,16,.22);
-    --acc:#E63A1E; --acc-deep:#C22D14;
+    --acc:#E63A1E; --acc-deep:#C22D14; --acc-2:#C22D14;
     --sans:'Archivo', -apple-system, sans-serif;
-    --exp:'Archivo Expanded', 'Archivo', sans-serif;
+    --exp:'Archivo', sans-serif;
     --mono:'IBM Plex Mono', monospace;
     --gut:clamp(18px,5vw,80px);
     --e:cubic-bezier(.19,1,.22,1); --e2:cubic-bezier(.34,.09,.28,1);
@@ -22,28 +32,28 @@
   body{ background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
   svg,img{ display:block; max-width:100%; }
   a{ color:inherit; text-decoration:none; }
-  ::selection{ background:var(--acc); color:#fff; }
+  ::selection{ background:var(--acc-2); color:#fff; }
   :focus-visible{ outline:2px solid var(--acc); outline-offset:3px; }
   .defs{ position:absolute; width:0; height:0; }
 
   .progress{ position:fixed; top:0; left:0; height:3px; width:0; background:var(--acc); z-index:70; }
-  .rail{ position:fixed; left:12px; bottom:20px; z-index:40; font-family:var(--mono); font-size:9.5px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-40); writing-mode:vertical-rl; transform:rotate(180deg); user-select:none; pointer-events:none; }
+  .rail{ position:fixed; left:12px; bottom:20px; z-index:40; font-family:var(--mono); font-size:12px; letter-spacing:0.55px; color:var(--ink-40); writing-mode:vertical-rl; transform:rotate(180deg); user-select:none; pointer-events:none; }
   @media (max-width:900px){ .rail{ display:none; } }
 
   /* Masthead */
-  .mast{ position:fixed; inset:0 0 auto 0; z-index:60; padding:0 var(--gut); display:flex; align-items:center; justify-content:space-between; height:66px; transition:background .4s var(--e), border-color .4s var(--e), height .4s var(--e); border-bottom:1px solid transparent; }
+  .mast{ position:fixed; inset:0 0 auto 0; z-index:60; padding:0 var(--gut); display:flex; align-items:center; justify-content:space-between; height:66px; transition:background .4s var(--e), border-color .4s var(--e); border-bottom:1px solid transparent; }
   .mast.stuck{ background:rgba(242,241,236,.85); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border-bottom-color:var(--ink); height:58px; }
   .brand{ display:flex; align-items:center; gap:9px; }
   .brand svg{ width:22px; height:22px; }
-  .brand b{ font-family:var(--exp); font-weight:800; font-size:16px; letter-spacing:-.01em; text-transform:uppercase; }
+  .brand b{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:16px; letter-spacing:-.01em; text-transform:uppercase; }
   .nav{ display:flex; align-items:center; gap:26px; }
-  .nav a:not(.pill){ font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--ink-60); transition:color .25s var(--e); }
-  .nav a:not(.pill):hover, .nav a[aria-current]{ color:var(--acc); }
+  .nav a:not(.pill){ font-family:var(--mono); font-size:12px; letter-spacing:0.55px; text-transform:uppercase; color:var(--ink-60); transition:color .25s var(--e); }
+  .nav a:not(.pill):hover, .nav a[aria-current]{ color:var(--acc-2); }
   @media (max-width:640px){ .nav a:not(.pill){ display:none; } }
-  .pill{ font-family:var(--mono); font-weight:500; font-size:11px; letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border:1.5px solid var(--ink); color:var(--ink); transition:all .25s var(--e); }
-  .pill:hover{ background:var(--acc); border-color:var(--acc); color:#fff; }
+  .pill{ font-family:var(--mono); font-weight:500; font-size:12px; letter-spacing:0.55px; text-transform:uppercase; padding:10px 18px; border:1.5px solid var(--ink); color:var(--ink); transition:all .25s var(--e); }
+  .pill:hover{ background:var(--acc-2); border-color:var(--acc-2); color:#fff; }
   .pill.solid{ background:var(--ink); border-color:var(--ink); color:var(--bg); }
-  .pill.solid:hover{ background:var(--acc); border-color:var(--acc); color:#fff; }
+  .pill.solid:hover{ background:var(--acc-2); border-color:var(--acc-2); color:#fff; }
 
   .js [data-rv]{ opacity:0; transform:translateY(16px); transition:opacity .7s var(--e), transform .8s var(--e); }
   .js [data-rv].in{ opacity:1; transform:none; }
@@ -52,9 +62,9 @@
 
   /* HERO */
   .hero{ min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding:90px var(--gut) 0; position:relative; }
-  .hero-meta{ display:flex; gap:18px; align-items:center; font-family:var(--mono); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-60); margin-bottom:38px; }
+  .hero-meta{ display:flex; gap:18px; align-items:center; font-family:var(--mono); font-size:12px; letter-spacing:0.55px; color:var(--ink-60); margin-bottom:38px; }
   .hero-meta .dot{ width:7px; height:7px; background:var(--acc); border-radius:50%; }
-  .hero h1{ font-family:var(--exp); font-weight:900; font-size:clamp(44px,10.5vw,168px); line-height:.9; letter-spacing:-.03em; text-transform:uppercase; }
+  .hero h1{ font-family:var(--exp); font-stretch:115%; font-weight:900; font-size:clamp(44px,10.5vw,168px); line-height:.9; letter-spacing:-.03em; text-transform:uppercase; }
   .hero h1 .o{ color:var(--acc); }
   .js .hero h1 .ln{ display:block; overflow:hidden; }
   .js .hero h1 .ln>i{ display:inline-block; font-style:normal; transform:translateY(103%); transition:transform 1s var(--e2); }
@@ -63,44 +73,44 @@
   .js .hero.lit h1 .ln:nth-child(3)>i{ transition-delay:.18s; }
   .hero-foot{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:28px; margin-top:auto; padding:34px 0 40px; }
   .hero-lede{ max-width:40ch; font-size:16px; color:var(--ink-60); line-height:1.6; }
-  .hero-num{ font-family:var(--exp); font-weight:900; font-size:clamp(60px,9vw,150px); line-height:.8; color:var(--acc); letter-spacing:-.03em; }
+  .hero-num{ font-family:var(--exp); font-stretch:115%; font-weight:900; font-size:clamp(60px,9vw,150px); line-height:.8; color:var(--acc); letter-spacing:-.03em; }
   .hero-cta{ display:flex; gap:10px; }
   @media (max-width:600px){ .hero-cta{ width:100%; } .hero-cta .pill{ flex:1; text-align:center; } .hero-num{ display:none; } }
 
   /* Belt (marquee) */
-  .belt{ background:var(--acc); color:#fff; overflow:hidden; white-space:nowrap; padding:14px 0; }
-  .belt-row{ display:inline-flex; gap:0; align-items:center; animation:mv 32s linear infinite; }
+  .belt{ background:var(--acc-2); color:#fff; overflow:hidden; white-space:normal; padding:14px 0; }
+  .belt-row{ display:inline-flex; gap:0; align-items:center;  }
   .belt:hover .belt-row{ animation-play-state:paused; }
-  .belt span{ font-family:var(--exp); font-weight:800; font-size:15px; letter-spacing:.02em; text-transform:uppercase; padding:0 28px; display:inline-flex; align-items:center; }
+  .belt span{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:15px; letter-spacing:.02em; text-transform:uppercase; padding:0 28px; display:inline-flex; align-items:center; }
   .belt span::after{ content:"／"; margin-left:28px; opacity:.5; }
   @keyframes mv{ to{ transform:translateX(-50%); } }
 
   /* Section framework */
-  .pad{ padding:clamp(72px,12vh,170px) var(--gut); }
+  .pad{ padding:clamp(56px,8vh,116px) var(--gut); }
   .rulehead{ display:flex; align-items:baseline; justify-content:space-between; gap:20px; border-top:2px solid var(--ink); padding-top:18px; margin-bottom:clamp(40px,6vh,72px); flex-wrap:wrap; }
-  .rulehead .idx{ font-family:var(--mono); font-size:12px; letter-spacing:1px; color:var(--acc); }
-  .rulehead h2{ font-family:var(--exp); font-weight:800; font-size:clamp(28px,5.2vw,68px); line-height:.95; letter-spacing:-.02em; text-transform:uppercase; max-width:16ch; }
+  .rulehead .idx{ font-family:var(--mono); font-size:12px; letter-spacing:0.60px; color:var(--acc-2); }
+  .rulehead h2{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(28px,5.2vw,68px); line-height:.95; letter-spacing:-.02em; text-transform:uppercase; max-width:16ch; }
   .rulehead h2 .o{ color:var(--acc); }
 
   /* REEL */
-  .reel-sec{ background:var(--bg-2); border-top:1px solid var(--ink); padding:clamp(72px,12vh,150px) 0; }
+  .reel-sec{ background:var(--bg-2); border-top:1px solid var(--ink); padding:clamp(56px,8vh,104px) 0; }
   .reel-top{ padding:0 var(--gut); display:flex; justify-content:space-between; align-items:baseline; gap:20px; border-top:2px solid var(--ink); margin:0 var(--gut) 44px; padding-top:18px; flex-wrap:wrap; }
-  .reel-top .idx{ font-family:var(--mono); font-size:12px; color:var(--acc); }
-  .reel-top h2{ font-family:var(--exp); font-weight:800; font-size:clamp(26px,4.6vw,60px); line-height:.95; letter-spacing:-.02em; text-transform:uppercase; }
+  .reel-top .idx{ font-family:var(--mono); font-size:12px; color:var(--acc-2); }
+  .reel-top h2{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(26px,4.6vw,60px); line-height:.95; letter-spacing:-.02em; text-transform:uppercase; }
   .reel-top h2 .o{ color:var(--acc); }
-  .reel-hint{ font-family:var(--mono); font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-40); }
+  .reel-hint{ font-family:var(--mono); font-size:12px; letter-spacing:0.58px; color:var(--ink-40); }
   .reel{ display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 var(--gut) 6px; scrollbar-width:none; cursor:grab; }
   .reel::-webkit-scrollbar{ display:none; }
   .reel.drag{ cursor:grabbing; scroll-snap-type:none; }
   .panel{ scroll-snap-align:start; flex:0 0 min(80vw,420px); background:var(--card); border:1.5px solid var(--ink); padding:30px 28px; min-height:430px; display:flex; flex-direction:column; position:relative; transition:background .3s var(--e), color .3s var(--e); }
   .panel:hover{ background:var(--ink); color:var(--bg); }
-  .panel .pn{ font-family:var(--exp); font-weight:900; font-size:72px; line-height:.8; letter-spacing:-.03em; }
-  .panel:hover .pn{ color:var(--acc); }
-  .panel .yr{ font-family:var(--mono); font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--acc); margin:auto 0 14px; }
-  .panel h3{ font-family:var(--exp); font-weight:800; font-size:24px; line-height:1; text-transform:uppercase; letter-spacing:-.01em; margin-bottom:14px; }
+  .panel .pn{ font-family:var(--exp); font-stretch:115%; font-weight:900; font-size:72px; line-height:.8; letter-spacing:-.03em; }
+  .panel:hover .pn{ color:var(--acc-2); }
+  .panel .yr{ font-family:var(--mono); font-size:12px; letter-spacing:0.58px; color:var(--acc-2); margin:auto 0 14px; }
+  .panel h3{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:24px; line-height:1; text-transform:uppercase; letter-spacing:-.01em; margin-bottom:14px; }
   .panel p{ font-size:13.5px; color:var(--ink-60); line-height:1.55; margin-bottom:20px; }
   .panel:hover p{ color:rgba(242,241,236,.7); }
-  .panel .labs{ border-top:1.5px solid currentColor; padding-top:14px; font-family:var(--mono); font-size:10px; line-height:1.8; color:var(--ink-40); }
+  .panel .labs{ border-top:1.5px solid currentColor; padding-top:14px; font-family:var(--mono); font-size:12px; line-height:1.8; color:var(--ink-40); }
   .panel:hover .labs{ color:rgba(242,241,236,.6); }
   .panel .labs b{ color:inherit; }
   .reel-prog{ margin:28px var(--gut) 0; height:2px; background:var(--hair); position:relative; }
@@ -108,26 +118,26 @@
 
   /* LEDGER (why) */
   .ledger{ border-top:1.5px solid var(--ink); }
-  .lrow{ display:grid; grid-template-columns:80px minmax(180px,320px) 1fr; gap:clamp(14px,4vw,60px); padding:clamp(26px,4vh,48px) 0; border-bottom:1.5px solid var(--hair); align-items:baseline; transition:padding-left .4s var(--e), background .4s var(--e); }
+  .lrow{ display:grid; grid-template-columns:80px minmax(180px,320px) 1fr; gap:clamp(14px,4vw,60px); padding:clamp(26px,4vh,48px) 0; border-bottom:1.5px solid var(--hair); align-items:baseline; transition:background .4s var(--e); }
   @media (max-width:760px){ .lrow{ grid-template-columns:50px 1fr; } .lrow p{ grid-column:1/-1; } }
-  .lrow:hover{ padding-left:14px; background:var(--acc); color:#fff; }
+  .lrow:hover{ padding-inline:14px 0; background:var(--acc-2); color:#fff; }
   .lrow:hover .n, .lrow:hover p{ color:rgba(255,255,255,.85); }
-  .lrow .n{ font-family:var(--mono); font-size:12px; color:var(--acc); }
-  .lrow h3{ font-family:var(--exp); font-weight:800; font-size:clamp(21px,3vw,34px); line-height:.98; text-transform:uppercase; letter-spacing:-.01em; }
+  .lrow .n{ font-family:var(--mono); font-size:12px; color:var(--acc-2); }
+  .lrow h3{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(21px,3vw,34px); line-height:.98; letter-spacing:-.01em; }
   .lrow p{ font-size:14.5px; color:var(--ink-60); line-height:1.6; max-width:52ch; }
-  .js .pin .lrow{ opacity:.32; transition:opacity .45s var(--e2), transform .45s var(--e2); }
+  .js .pin .lrow{ opacity:1; transition:opacity .45s var(--e2), transform .45s var(--e2); }
   .js .pin .lrow.hot{ opacity:1; }
 
   /* FIG */
   .fig{ display:grid; grid-template-columns:1fr; gap:clamp(32px,6vw,80px); align-items:center; }
   @media (min-width:900px){ .fig.l{ grid-template-columns:.8fr 1.2fr; } .fig.r{ grid-template-columns:1.2fr .8fr; } .fig.r .fig-art{ order:2; } }
-  .fig-cap{ font-family:var(--mono); font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--acc); margin-bottom:20px; }
-  .fig h2{ font-family:var(--exp); font-weight:800; font-size:clamp(28px,4.6vw,58px); line-height:.96; letter-spacing:-.02em; text-transform:uppercase; margin-bottom:22px; }
+  .fig-cap{ font-family:var(--mono); font-size:12px; letter-spacing:0.58px; text-transform:uppercase; color:var(--acc-2); margin-bottom:20px; }
+  .fig h2{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(28px,4.6vw,58px); line-height:.96; letter-spacing:-.02em; text-transform:uppercase; margin-bottom:22px; }
   .fig h2 .o{ color:var(--acc); }
   .fig p{ font-size:15px; color:var(--ink-60); line-height:1.6; max-width:46ch; }
   .fig-art svg{ width:100%; }
   .fig-art .frame{ fill:none; stroke:var(--ink); stroke-width:1.5; }
-  .fig-art .cap{ font-family:var(--mono); font-size:9px; letter-spacing:1.5px; fill:var(--ink-40); }
+  .fig-art .cap{ font-family:var(--mono); font-size:12px; letter-spacing:0.55px; fill:var(--ink-40); }
 
   /* PROSPECTUS */
   .pros{ border:1.5px solid var(--ink); }
@@ -135,43 +145,43 @@
   @media (max-width:600px){ .prow{ grid-template-columns:.9fr 1fr 1fr; } }
   .prow>div{ padding:18px clamp(12px,2.5vw,28px); border-bottom:1.5px solid var(--hair); display:flex; align-items:center; font-size:14px; }
   .prow:last-child>div{ border-bottom:none; }
-  .pk{ font-family:var(--mono); font-size:11px; letter-spacing:.5px; color:var(--ink-40); }
-  .pt{ color:var(--ink-40); border-right:1.5px solid var(--hair); font-family:var(--exp); font-weight:600; font-size:14px; }
-  .pu{ font-family:var(--exp); font-weight:700; font-size:14px; background:var(--acc); color:#fff; }
+  .pk{ font-family:var(--mono); font-size:12px; letter-spacing:0.50px; color:var(--ink-40); }
+  .pt{ color:var(--ink-40); border-right:1.5px solid var(--hair); font-family:var(--exp); font-stretch:115%; font-weight:600; font-size:14px; }
+  .pu{ font-family:var(--exp); font-stretch:115%; font-weight:700; font-size:14px; background:var(--acc-2); color:#fff; }
   .phead>div{ background:var(--ink); }
-  .phead .pk{ color:rgba(242,241,236,.5); } .phead .pt{ color:rgba(242,241,236,.7); border-right-color:rgba(242,241,236,.2); } .phead .pu{ background:var(--acc); }
-  .phead .pk,.phead .pt,.phead .pu{ font-family:var(--mono); font-weight:500; font-size:10px; letter-spacing:1px; text-transform:uppercase; }
+  .phead .pk{ color:rgba(242,241,236,.5); } .phead .pt{ color:rgba(242,241,236,.7); border-right-color:rgba(242,241,236,.2); } .phead .pu{ background:var(--acc-2); }
+  .phead .pk,.phead .pt,.phead .pu{ font-family:var(--mono); font-weight:500; font-size:12px; letter-spacing:0.58px; text-transform:uppercase; }
 
   /* TRACKS */
   .tracks{ border-top:1.5px solid var(--ink); }
-  .track{ display:grid; grid-template-columns:60px 1fr auto; gap:clamp(14px,3vw,48px); align-items:center; padding:clamp(24px,4vh,42px) 0; border-bottom:1.5px solid var(--hair); transition:padding .4s var(--e), background .4s var(--e), color .4s var(--e); position:relative; }
+  .track{ display:grid; grid-template-columns:60px 1fr auto; gap:clamp(14px,3vw,48px); align-items:center; padding:clamp(24px,4vh,42px) 0; border-bottom:1.5px solid var(--hair); transition:background .4s var(--e), color .4s var(--e); position:relative; }
   .track:hover{ padding-left:16px; padding-right:16px; background:var(--ink); color:var(--bg); }
-  .track .tk{ font-family:var(--mono); font-size:11px; letter-spacing:1px; color:var(--acc); }
-  .track h3{ font-family:var(--exp); font-weight:800; font-size:clamp(22px,3.4vw,42px); line-height:.95; text-transform:uppercase; letter-spacing:-.01em; }
+  .track .tk{ font-family:var(--mono); font-size:12px; letter-spacing:0.55px; color:var(--acc-2); }
+  .track h3{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(22px,3.4vw,42px); line-height:.95; letter-spacing:-.01em; }
   .track .desc{ display:none; }
   @media (min-width:860px){ .track{ grid-template-columns:66px 24ch 1fr auto; } .track .desc{ display:block; font-size:13px; color:var(--ink-60); line-height:1.5; max-width:40ch; } .track:hover .desc{ color:rgba(242,241,236,.7); } }
-  .track .go{ font-family:var(--mono); font-size:11px; color:var(--ink-40); transition:transform .35s var(--e), color .35s var(--e); }
-  .track:hover .go{ color:var(--acc); transform:translateX(6px); }
+  .track .go{ font-family:var(--mono); font-size:12px; color:var(--ink-40); transition:transform .35s var(--e), color .35s var(--e); }
+  .track:hover .go{ color:var(--acc-2); transform:translateX(6px); }
 
   /* CLOSING */
   .closing{ padding:clamp(80px,15vh,200px) var(--gut); background:var(--ink); color:var(--bg); text-align:left; position:relative; overflow:hidden; }
-  .closing .idx{ font-family:var(--mono); font-size:12px; letter-spacing:1px; color:var(--acc); margin-bottom:26px; }
-  .closing h2{ font-family:var(--exp); font-weight:900; font-size:clamp(38px,9vw,150px); line-height:.86; letter-spacing:-.03em; text-transform:uppercase; margin-bottom:44px; }
+  .closing .idx{ font-family:var(--mono); font-size:12px; letter-spacing:0.60px; color:var(--acc-2); margin-bottom:26px; }
+  .closing h2{ font-family:var(--exp); font-stretch:115%; font-weight:900; font-size:clamp(38px,9vw,150px); line-height:.86; letter-spacing:-.03em; text-transform:uppercase; margin-bottom:44px; }
   .closing h2 .o{ color:var(--acc); }
   .closing .hero-cta .pill{ border-color:var(--bg); color:var(--bg); }
-  .closing .hero-cta .pill:hover{ background:var(--acc); border-color:var(--acc); color:#fff; }
+  .closing .hero-cta .pill:hover{ background:var(--acc-2); border-color:var(--acc-2); color:#fff; }
   .closing .hero-cta .pill.solid{ background:var(--bg); color:var(--ink); }
-  .closing .hero-cta .pill.solid:hover{ background:var(--acc); border-color:var(--acc); color:#fff; }
+  .closing .hero-cta .pill.solid:hover{ background:var(--acc-2); border-color:var(--acc-2); color:#fff; }
 
   footer{ background:var(--bg); border-top:1.5px solid var(--ink); padding:clamp(44px,7vh,80px) var(--gut) 36px; }
   .colo{ display:grid; grid-template-columns:1fr; gap:36px; }
   @media (min-width:760px){ .colo{ grid-template-columns:1.5fr 1fr 1fr 1fr; } }
   .colo .brand b{ font-size:20px; }
   .colo p{ font-size:13px; color:var(--ink-60); max-width:32ch; margin-top:16px; line-height:1.6; }
-  .colo h4{ font-family:var(--mono); font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-40); margin-bottom:14px; }
-  .colo a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:.5px; text-transform:uppercase; color:var(--ink-60); padding:5px 0; transition:color .25s var(--e); }
+  .colo h4{ font-family:var(--mono); font-size:12px; letter-spacing:0.58px; text-transform:uppercase; color:var(--ink-40); margin-bottom:14px; }
+  .colo a{ display:block; font-family:var(--mono); font-size:12px; letter-spacing:0.50px; text-transform:uppercase; color:var(--ink-60); padding:5px 0; transition:color .25s var(--e); }
   .colo a:hover{ color:var(--acc); }
-  .cfoot{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:50px; padding-top:22px; border-top:1.5px solid var(--hair); font-family:var(--mono); font-size:10px; letter-spacing:1px; color:var(--ink-40); text-transform:uppercase; }
+  .cfoot{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:50px; padding-top:22px; border-top:1.5px solid var(--hair); font-family:var(--mono); font-size:12px; letter-spacing:0.58px; color:var(--ink-40); text-transform:uppercase; }
 
 
   /* AUTHORITY: stat bar */
@@ -180,28 +190,28 @@
   .stat{ padding:clamp(28px,4vh,54px) clamp(18px,2.5vw,34px); border-bottom:1.5px solid var(--hair); border-right:1.5px solid var(--hair); }
   @media (min-width:760px){ .stat{ border-bottom:none; } }
   .stat:nth-child(2n){ border-right:none; } @media (min-width:760px){ .stat:nth-child(2n){ border-right:1.5px solid var(--hair); } .stat:nth-child(4n){ border-right:none; } }
-  .stat .fig{ font-family:var(--exp); font-weight:900; font-size:clamp(40px,6.5vw,92px); line-height:.82; letter-spacing:-.03em; color:var(--acc); }
+  .stat .fig{ font-family:var(--exp); font-stretch:115%; font-weight:900; font-size:clamp(40px,6.5vw,92px); line-height:.82; letter-spacing:-.03em; color:var(--acc); }
   .stat .fig .ph{ color:var(--ink); opacity:.25; font-size:.6em; }
-  .stat .lab{ font-family:var(--mono); font-size:10.5px; letter-spacing:1px; text-transform:uppercase; color:var(--ink-60); margin-top:14px; max-width:22ch; }
+  .stat .lab{ font-family:var(--mono); font-size:12px; letter-spacing:0.60px; color:var(--ink-60); margin-top:14px; max-width:22ch; }
 
   /* AUTHORITY: partners */
   .partners{ border-top:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink); padding:clamp(30px,5vh,56px) var(--gut); background:var(--bg-2); }
-  .partners .cap{ font-family:var(--mono); font-size:10.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-40); text-align:center; margin-bottom:30px; }
+  .partners .cap{ font-family:var(--mono); font-size:12px; letter-spacing:0.60px; text-transform:uppercase; color:var(--ink-40); text-align:center; margin-bottom:30px; }
   .plist{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:clamp(18px,4vw,60px); }
-  .plist span{ font-family:var(--exp); font-weight:800; font-size:clamp(16px,2.4vw,26px); letter-spacing:-.01em; text-transform:uppercase; color:var(--ink); opacity:.5; transition:opacity .3s var(--e), color .3s var(--e); }
+  .plist span{ font-family:var(--exp); font-stretch:115%; font-weight:800; font-size:clamp(16px,2.4vw,26px); letter-spacing:-.01em; text-transform:uppercase; color:var(--ink); opacity:.5; transition:opacity .3s var(--e), color .3s var(--e); }
   .plist span:hover{ opacity:1; color:var(--acc); }
-  .plist span.ph{ opacity:.32; border-bottom:2px dashed var(--acc); }
+  .plist span.ph{ opacity:1; border-bottom:2px dashed var(--acc); }
 
   /* AUTHORITY: outcomes */
   .out{ display:grid; grid-template-columns:1fr; gap:16px; }
   @media (min-width:760px){ .out{ grid-template-columns:repeat(3,1fr); } }
   .ocard{ border:1.5px solid var(--ink); padding:30px 28px; display:flex; flex-direction:column; min-height:280px; transition:background .3s var(--e), color .3s var(--e); }
   .ocard:hover{ background:var(--ink); color:var(--bg); }
-  .ocard .q{ font-family:var(--exp); font-weight:700; font-size:clamp(18px,2vw,23px); line-height:1.15; letter-spacing:-.01em; margin-bottom:auto; }
+  .ocard .q{ font-family:var(--exp); font-stretch:115%; font-weight:700; font-size:clamp(18px,2vw,23px); line-height:1.32; letter-spacing:-.01em; margin-bottom:auto; }
   .ocard .q .o{ color:var(--acc); }
   .ocard .who{ margin-top:26px; padding-top:16px; border-top:1.5px solid currentColor; }
-  .ocard .who b{ display:block; font-family:var(--exp); font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:-.01em; }
-  .ocard .who span{ font-family:var(--mono); font-size:10.5px; letter-spacing:.5px; color:var(--ink-40); }
+  .ocard .who b{ display:block; font-family:var(--exp); font-stretch:115%; font-weight:700; font-size:14px; letter-spacing:-.01em; }
+  .ocard .who span{ font-family:var(--mono); font-size:12px; letter-spacing:0.50px; color:var(--ink-40); }
   .ocard:hover .who span{ color:rgba(242,241,236,.6); }
 
   @media (prefers-reduced-motion:reduce){
@@ -212,6 +222,40 @@
     .js .pin .lrow{ opacity:1 !important; }
     html{ scroll-behavior:auto; }
   }
+
+  /* adapt: drag-carousels are a pointer idiom; stack them on touch */
+  @media (max-width:760px){
+    .reel-track{ display:grid; grid-auto-flow:row; gap:14px; overflow:visible; transform:none !important; }
+    .reel{ overflow:visible; }
+    .panel{ width:auto; min-width:0; }
+    .reel-prog, .reel-top .drag{ display:none; }
+    .belt-row{ display:flex; flex-wrap:wrap; gap:8px 18px; }
+  }
+  @media (max-width:520px){ .pad{ padding-inline:18px; } }
+
+  /* layout: a heading belongs to what follows it */
+  h2, h3 { margin-block-start:1.6em; margin-block-end:.5em; }
+  .rulehead h2, .reel-top h2, .fig h2, .closing h2 { margin-block-start:0; }
+  p { max-width:72ch; }
+  .lrow, .track, .orow { --row-lead:56px; }
+
+  @media (max-width:760px){
+    .reel-track{ display:grid !important; grid-auto-flow:row !important; gap:14px; overflow:visible !important; transform:none !important; width:auto !important; }
+    .panel{ width:auto !important; min-width:0 !important; flex:none !important; }
+    .reel, .reel-sec{ overflow:visible !important; }
+    .reel-prog, .reel-hint{ display:none !important; }
+  }
+  .fcol{ font-family:var(--mono); font-size:12px; letter-spacing:.09em; text-transform:uppercase; font-weight:400; color:var(--ink-40); font-stretch:100%; }
+
+  @media (max-width:760px){
+    .reel{ display:grid !important; grid-auto-flow:row !important; overflow-x:visible !important;
+           scroll-snap-type:none !important; cursor:auto !important; gap:14px; padding-bottom:0; }
+    .panel{ width:auto !important; min-width:0 !important; flex:none !important; scroll-snap-align:none !important; }
+  }
+
+  p, .a, .sub, .v { max-width:70ch; }
+
+  @media (max-width:760px){ .hero{ min-height:auto; padding-bottom:56px; } .hero-foot{ margin-top:clamp(40px,10vh,90px) !important; } }
 </style>
 </head>
 <body>
@@ -224,7 +268,7 @@
 </defs></svg>
 
 <header class="mast" id="mast">
-  <a class="brand" href="#" aria-label="Cannademy home"><svg viewBox="0 0 100 100" fill="#111110"><use href="#mark"/></svg><b>Cannademy</b></a>
+  <a class="brand" href="#" aria-label="Cannademy home"><svg aria-hidden="true" viewBox="0 0 100 100" fill="#111110"><use href="#mark"/></svg><b>Cannademy</b></a>
   <nav class="nav">
     <a href="programme.html">Programme</a>
     <a href="specializations.html">Tracks</a>
@@ -259,13 +303,10 @@
   <section class="stats" aria-label="Cannademy by the numbers">
     <div class="stat" data-rv><div class="fig">5,000<span class="ph">+</span></div><div class="lab">Graduates trained since 2019</div></div>
     <div class="stat" data-rv data-d="1"><div class="fig">6<span class="ph">+</span></div><div class="lab">Years operating, California to Calgary</div></div>
-    <div class="stat" data-rv data-d="2"><div class="fig"><span class="ph">[00]</span>%</div><div class="lab">Of graduates working in the industry <span style="opacity:.6">[confirm figure]</span></div></div>
-    <div class="stat" data-rv data-d="3"><div class="fig"><span class="ph">[00]</span>+</div><div class="lab">Facility &amp; pharmacy partners <span style="opacity:.6">[confirm figure]</span></div></div>
-  </section>
+    </section>
 
   <!-- AUTHORITY / PARTNERS -->
   <section class="partners">
-    <div class="cap">Trusted by leading cultivators, pharmacies &amp; brands</div>
     <div class="plist">
       <span class="ph">Partner One</span>
       <span class="ph">Partner Two</span>
@@ -278,7 +319,7 @@
   <!-- REEL -->
   <section class="reel-sec" id="programme">
     <div class="reel-top">
-      <div><div class="idx">01 / Curriculum</div><h2>Three years. <span class="o">Nine intensives.</span></h2></div>
+      <div><h2>Three years. <span class="o">Nine intensives.</span></h2></div>
       <div class="reel-hint">Drag →</div>
     </div>
     <div class="reel" id="reel">
@@ -292,12 +333,12 @@
 
   <!-- WHY -->
   <section class="pad pin" id="why">
-    <div class="rulehead"><span class="idx">02 / Why</span><h2>Not a weekend <span class="o">webinar.</span></h2></div>
+    <div class="rulehead"><h2>Not a weekend <span class="o">webinar.</span></h2></div>
     <div class="ledger">
-      <div class="lrow"><span class="n">01</span><h3>Unmatched depth</h3><p>Most cannabis "education" is a six-week video course. This is three years, because cultivation science, medical application, and compliance are too technical to teach any other way.</p></div>
-      <div class="lrow"><span class="n">02</span><h3>A true hybrid model</h3><p>Online coursework from anywhere, paired with hands-on intensives in a real licensed facility. Theory without practice is trivia. Practice without theory doesn't scale.</p></div>
-      <div class="lrow"><span class="n">03</span><h3>Built by practitioners</h3><p>Faculty drawn from real cultivation operations and clinical practice, not professional course-writers.</p></div>
-      <div class="lrow"><span class="n">04</span><h3>Globally relevant</h3><p>A curriculum built around the regulatory realities of the UK, EU, and North America. The legal industry doesn't stop at one border.</p></div>
+      <div class="lrow"><h3>Unmatched depth</h3><p>Most cannabis "education" is a six-week video course. This is three years, because cultivation science, medical application, and compliance are too technical to teach any other way.</p></div>
+      <div class="lrow"><h3>A true hybrid model</h3><p>Online coursework from anywhere, paired with hands-on intensives in a real licensed facility. Theory without practice is trivia. Practice without theory doesn't scale.</p></div>
+      <div class="lrow"><h3>Built by practitioners</h3><p>Faculty drawn from real cultivation operations and clinical practice, not professional course-writers.</p></div>
+      <div class="lrow"><h3>Globally relevant</h3><p>A curriculum built around the regulatory realities of the UK, EU, and North America. The legal industry doesn't stop at one border.</p></div>
     </div>
   </section>
 
@@ -305,7 +346,7 @@
   <section class="pad" style="background:var(--bg-2); border-top:1.5px solid var(--ink);">
     <div class="fig l">
       <div class="fig-art parallax" data-parallax="0.05" aria-hidden="true">
-        <svg viewBox="0 0 480 480">
+        <svg aria-hidden="true" viewBox="0 0 480 480">
           <rect class="frame" x="4" y="4" width="472" height="472"/>
           <line class="frame" x1="4" y1="30" x2="476" y2="30"/>
           <text x="16" y="22" class="cap">FIG. 2 / TRICHOME CLUSTER / ×40</text>
@@ -333,7 +374,7 @@
 
   <!-- PROSPECTUS -->
   <section class="pad">
-    <div class="rulehead"><span class="idx">03 / Comparison</span><h2>Do the <span class="o">math.</span></h2></div>
+    <div class="rulehead"><h2>Do the <span class="o">math.</span></h2></div>
     <div class="pros" data-rv>
       <div class="prow phead"><div class="pk"></div><div class="pt">Typical Online Course</div><div class="pu">Cannademy</div></div>
       <div class="prow"><div class="pk">Duration</div><div class="pt">6–12 weeks</div><div class="pu">3 years</div></div>
@@ -348,7 +389,7 @@
   <section class="pad" style="background:var(--bg-2); border-top:1.5px solid var(--ink);">
     <div class="fig r">
       <div class="fig-art parallax" data-parallax="0.05" aria-hidden="true">
-        <svg viewBox="0 0 460 420">
+        <svg aria-hidden="true" viewBox="0 0 460 420">
           <circle cx="200" cy="18" r="4" fill="#E63A1E"/>
           <path d="M200,18 C160,66 110,106 78,174" fill="none" stroke="#111110" stroke-width="2.4" stroke-linecap="round"/>
           <path d="M200,18 C195,86 192,166 188,244" fill="none" stroke="#111110" stroke-width="2.6" stroke-linecap="round"/>
@@ -372,18 +413,14 @@
 
   <!-- AUTHORITY / OUTCOMES -->
   <section class="pad">
-    <div class="rulehead"><span class="idx">05 / Outcomes</span><h2>Graduates now <span class="o">running the room.</span></h2><a href="outcomes.html" class="pill" style="align-self:center;">All Outcomes</a></div>
+    <div class="rulehead"><h2>Graduates now <span class="o">running the room.</span></h2><a href="outcomes.html" class="pill" style="align-self:center;">All Outcomes</a></div>
     <div class="out">
-      <div class="ocard" data-rv><p class="q">"I went from a trimming job to <span class="o">running cultivation</span> for a licensed facility. Cannademy is the reason."</p><div class="who"><b>[Graduate Name]</b><span>Head Grower / [Company]</span></div></div>
-      <div class="ocard" data-rv data-d="1"><p class="q">"The compliance training alone got me a <span class="o">QA role</span> I couldn't have touched before."</p><div class="who"><b>[Graduate Name]</b><span>Quality &amp; Compliance Lead / [Company]</span></div></div>
-      <div class="ocard" data-rv data-d="2"><p class="q">"I used the business track to <span class="o">launch my own brand.</span> Three years on, we're in [00] pharmacies."</p><div class="who"><b>[Graduate Name]</b><span>Founder / [Company]</span></div></div>
-    </div>
-    <p style="font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;color:var(--ink-40);text-transform:uppercase;margin-top:22px;">Replace bracketed names, companies &amp; figures with real, consented graduate stories before launch.</p>
-  </section>
+      </div>
+    </section>
 
   <!-- TRACKS -->
   <section class="pad" id="tracks">
-    <div class="rulehead"><span class="idx">06 / Year Three</span><h2>Pick a <span class="o">lane.</span></h2></div>
+    <div class="rulehead"><h2>Pick a <span class="o">lane.</span></h2></div>
     <div class="tracks">
       <a class="track" href="specializations.html"><span class="tk">A</span><h3>Master Cultivator</h3><span class="desc">Advanced facility design, yield optimization, automation, multi-cycle production planning.</span><span class="go">VIEW →</span></a>
       <a class="track" href="specializations.html"><span class="tk">B</span><h3>Quality &amp; Regulatory</h3><span class="desc">Deep GACP/GMP systems, audit leadership, multi-jurisdiction regulatory strategy.</span><span class="go">VIEW →</span></a>
@@ -394,7 +431,6 @@
 
   <!-- CLOSING -->
   <section class="closing">
-    <div class="idx" data-rv>07 / Admissions</div>
     <h2 data-rv data-d="1">The founding <br>cohort is <span class="o">open.</span></h2>
     <div class="hero-cta" data-rv data-d="2"><a href="admissions.html" class="pill solid">Apply Now</a><a href="programme.html" class="pill">See the Curriculum</a></div>
   </section>
@@ -402,10 +438,10 @@
 
 <footer>
   <div class="colo">
-    <div><a class="brand" href="#" aria-label="Cannademy home"><svg viewBox="0 0 100 100" fill="#111110"><use href="#mark"/></svg><b>Cannademy</b></a><p>The most comprehensive cannabis cultivation and medical cannabis programme in the world.</p></div>
-    <div><h4>Programme</h4><a href="programme.html">Curriculum</a><a href="specializations.html">Specializations</a><a href="outcomes.html">Career Outcomes</a></div>
-    <div><h4>Institute</h4><a href="faculty.html">Faculty</a><a href="admissions.html">Admissions</a><a href="faq.html">FAQ</a></div>
-    <div><h4>Contact</h4><a href="contact.html">Get in touch</a><a href="contact.html#visit">Visit us</a><a href="admissions.html">Apply now</a></div>
+    <div><a class="brand" href="#" aria-label="Cannademy home"><svg aria-hidden="true" viewBox="0 0 100 100" fill="#111110"><use href="#mark"/></svg><b>Cannademy</b></a><p>A three-year programme in cannabis cultivation science, medical cannabis and compliance.</p></div>
+    <div><h3 class="fcol">Programme</h3><a href="programme.html">Curriculum</a><a href="specializations.html">Specializations</a><a href="outcomes.html">Career Outcomes</a></div>
+    <div><h3 class="fcol">Institute</h3><a href="faculty.html">Faculty</a><a href="admissions.html">Admissions</a><a href="faq.html">FAQ</a></div>
+    <div><h3 class="fcol">Contact</h3><a href="contact.html">Get in touch</a><a href="contact.html#visit">Visit us</a><a href="admissions.html">Apply now</a></div>
   </div>
   <div class="cfoot"><span>© MMXXVI Cannademy Ltd / United Kingdom</span><span>Cultivation Science / Medical Cannabis</span></div>
 </footer>
@@ -454,6 +490,10 @@
     }
   }catch(e){}
 })();
+</script>
+<script>
+/* harden: if the observer never fires, content still arrives */
+setTimeout(function(){document.querySelectorAll('[data-rv]:not(.in)').forEach(function(e){e.classList.add('in')})},2500);
 </script>
 </body>
 </html>
